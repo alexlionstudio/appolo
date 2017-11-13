@@ -23,19 +23,19 @@
   text-transform: uppercase;
 }
 .logo h1 {
-  font-size: 33px;
+  font-size: 30px;
   font-weight: bold;
   line-height: 1;
-  letter-spacing: 11px;
+  letter-spacing: 9px;
   color: #000;
   font-family: "Noto Sans";
 }
 .logo p {
   margin: 0px;
-  font-size: 13px;
+  font-size: 10px;
   font-weight: bold;
-  line-height: 1;
-  letter-spacing: 11px;
+  line-height: 1.5;
+  letter-spacing: 7px;
   color: #a1bbd9;
   font-family: "Noto Sans";
 }
@@ -56,6 +56,14 @@
   background: #9E9E9E;
   padding: 20px 0px 10px;
   margin-bottom: 10px;
+}
+.logo h1 {
+  font-size: 33px;
+  letter-spacing: 11px;
+}
+.logo p {
+  font-size: 14px;
+  letter-spacing: 11px;
 }
 @media (min-width: 998px) {
   .logo {
