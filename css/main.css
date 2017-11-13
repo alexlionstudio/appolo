@@ -26,7 +26,7 @@
   font-size: 32px;
   font-weight: bold;
   line-height: 1;
-  letter-spacing: 9px;
+  letter-spacing: 7px;
   color: #000;
   font-family: "Noto Sans";
 }
@@ -35,7 +35,7 @@
   font-size: 14px;
   font-weight: bold;
   line-height: 1.5;
-  letter-spacing: 9px;
+  letter-spacing: 8px;
   color: #a1bbd9;
   font-family: "Noto Sans";
 }
@@ -57,7 +57,7 @@
   padding: 20px 0px 10px;
   margin-bottom: 10px;
 }
-@media screen (min-width: 350px) {
+@media (min-width: 350px) {
   .logo h1 {
     font-size: 33px;
     letter-spacing: 10px;
@@ -67,7 +67,7 @@
     letter-spacing: 10px;
   }
 }
-@media screen (min-width: 768px) {
+@media (min-width: 768px) {
   .logo h1 {
     font-size: 33px;
     letter-spacing: 11px;
@@ -77,7 +77,7 @@
     letter-spacing: 11px;
   }
 }
-@media screen (min-width: 1200px) {
+@media (min-width: 992px) {
   .logo {
     margin-top: 60px;
     margin-bottom: 50px;
