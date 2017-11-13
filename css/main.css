@@ -23,7 +23,7 @@
   text-transform: uppercase;
 }
 .logo h1 {
-  font-size: 30px;
+  font-size: 32px;
   font-weight: bold;
   line-height: 1;
   letter-spacing: 9px;
@@ -32,10 +32,10 @@
 }
 .logo p {
   margin: 0px;
-  font-size: 10px;
+  font-size: 14px;
   font-weight: bold;
   line-height: 1.5;
-  letter-spacing: 7px;
+  letter-spacing: 9px;
   color: #a1bbd9;
   font-family: "Noto Sans";
 }
@@ -57,15 +57,27 @@
   padding: 20px 0px 10px;
   margin-bottom: 10px;
 }
-.logo h1 {
-  font-size: 33px;
-  letter-spacing: 11px;
+@media screen (min-width: 350px) {
+  .logo h1 {
+    font-size: 33px;
+    letter-spacing: 10px;
+  }
+  .logo p {
+    font-size: 14px;
+    letter-spacing: 10px;
+  }
 }
-.logo p {
-  font-size: 14px;
-  letter-spacing: 11px;
+@media screen (min-width: 768px) {
+  .logo h1 {
+    font-size: 33px;
+    letter-spacing: 11px;
+  }
+  .logo p {
+    font-size: 14px;
+    letter-spacing: 11px;
+  }
 }
-@media (min-width: 998px) {
+@media screen (min-width: 1200px) {
   .logo {
     margin-top: 60px;
     margin-bottom: 50px;
