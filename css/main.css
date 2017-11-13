@@ -1,3 +1,4 @@
+@import url("../fonts/noto/noto.css");
 .helper-structure {
   color: #fff;
   padding: 20px;
@@ -12,10 +13,37 @@
   padding: 20px 0px 10px;
   margin-bottom: 10px;
 }
+.noto-sans {
+  font-family: "Noto Sans";
+}
 .logo {
-  position: relative;
-  background: #66BB6A;
-  margin-top: 80px;
+  margin-top: 107px;
+  margin-bottom: 40px;
+  text-align: center;
+  text-transform: uppercase;
+}
+.logo h1 {
+  font-size: 33px;
+  font-weight: bold;
+  line-height: 1;
+  letter-spacing: 11px;
+  color: #000;
+  font-family: "Noto Sans";
+}
+.logo p {
+  margin: 0px;
+  font-size: 13px;
+  font-weight: bold;
+  line-height: 1;
+  letter-spacing: 11px;
+  color: #a1bbd9;
+  font-family: "Noto Sans";
+}
+.nav {
+  background: #2196F3;
+  position: absolute;
+  width: 100%;
+  top: 0px;
   color: #fff;
   padding: 20px;
   text-align: center;
@@ -23,6 +51,28 @@
   text-transform: uppercase;
   text-wrap: bold;
   margin-bottom: 10px;
+}
+.slider {
+  background: #9E9E9E;
+  padding: 20px 0px 10px;
+  margin-bottom: 10px;
+}
+@media (min-width: 998px) {
+  .logo {
+    margin-top: 60px;
+    margin-bottom: 50px;
+  }
+  .nav {
+    position: relative;
+  }
+  .logo h1 {
+    font-size: 38px;
+    letter-spacing: 11px;
+  }
+  .logo p {
+    font-size: 16px;
+    letter-spacing: 11px;
+  }
 }
 .block {
   background: #66BB6A;
@@ -54,34 +104,8 @@
   text-wrap: bold;
   margin-bottom: 10px;
 }
-.nav {
-  background: #2196F3;
-  position: absolute;
-  width: 100%;
-  top: 0px;
-  color: #fff;
-  padding: 20px;
-  text-align: center;
-  font-size: 20px;
-  text-transform: uppercase;
-  text-wrap: bold;
-  margin-bottom: 10px;
-}
-.slider {
-  background: #9E9E9E;
-  padding: 20px 0px 10px;
-  margin-bottom: 10px;
-}
 .footer {
   background: #9E9E9E;
   padding: 20px 0px 10px;
   margin-bottom: 10px;
-}
-@media (min-width: 998px) {
-  .logo {
-    margin-top: 0px;
-  }
-  .nav {
-    position: relative;
-  }
 }
