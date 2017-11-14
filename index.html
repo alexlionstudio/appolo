@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -23,11 +23,23 @@
   <body>
     <!-- logo start -->
     <div class="logo">
-        <h1>Апполо 404</h1>
-        <p>хостинг компания</p>
+        <h1 class="logo__heading" >Апполо 404</h1>
+        <p class="logo__text" >хостинг компания</p>
     </div>
     <!-- logo end -->
-    <div class="nav">Navigation</div>
+    <nav class="nav">
+        <div class="container">
+            <div id="nav__toggle" class="nav__toggle">Навигация</div>
+            <ul class="nav__menu">
+                <li class="nav__menu-list"><a class="nav__menu-link" href="#">главная</a></li>
+                <li class="nav__menu-list"><a class="nav__menu-link" href="#">как-мы-работаем</a></li>
+                <li class="nav__menu-list"><a class="nav__menu-link" href="#">фрилансеры</a></li>
+                <li class="nav__menu-list"><a class="nav__menu-link" href="#">стартапам</a></li>
+                <li class="nav__menu-list"><a class="nav__menu-link" href="#">тарифы</a></li>
+                <li class="nav__menu-list"><a class="nav__menu-link" href="#">контакты</a></li>
+            </ul>
+        </div><!-- container -->
+    </nav>
     <!-- Slider start  -->
     <div class="slider">
     	<div class="container">
@@ -132,5 +144,7 @@
     <script src="bower/jquery/dist/jquery.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="bower/bootstrap/dist/js/bootstrap.js"></script>
+    <!-- js -->
+    <script src="js/main.js"></script>
   </body>
 </html> 

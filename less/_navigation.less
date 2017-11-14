@@ -1,0 +1,68 @@
+.nav{
+ 	box-shadow: 0px 5px 10px #2a496d;
+	background: #38383a;
+	position: absolute;
+	top: 0px;
+	width: 100%;
+	z-index: 1;
+	@media (min-width: 992px){
+		position: relative;
+	}
+} 
+.nav__toggle{
+	display: block;
+	color: #fff;
+	padding: 28px 0px;
+	background: #16385f;
+	font-size: 14px;
+	line-height: 0.8;
+	letter-spacing: 3px; 
+	text-transform: uppercase;
+	background-image: url("../icon/navigation-icon.png");
+	background-repeat: no-repeat;
+	background-position: right;
+	.noto-sans;
+	@media (min-width: 992px){
+		display: none;
+	}
+}
+.nav__menu{
+	margin: 0px;
+	padding: 0px;
+ 	display: none;
+ 	@media (min-width: 992px){
+	 	display: flex;
+	 	justify-content: space-between;
+	}
+}
+.nav__menu-list{
+	display: block;
+ 	list-style-type: none;
+ 	@media (min-width: 992px){
+		display: inline-block;
+	}
+}
+.nav__menu-link{
+	display: inline-block;
+	background: #35577d;
+	width: 100%;
+	padding: 28px 0px;
+	font-size: 14px;
+	line-height: 0.8;
+	letter-spacing: 3px; 
+	text-transform: uppercase;
+	color: #fff;
+	.noto-sans;
+	&:hover, &:focus, &:active{
+		color: #ffcc00;
+		text-decoration: none;
+	}
+	@media (min-width: 992px){
+		background: #38383a;
+		line-height: 0.8;
+		.noto-sans;
+	}
+}
+.slider{
+	.full-width
+}

@@ -15,6 +15,7 @@
 }
 .noto-sans {
   font-family: "Noto Sans";
+  font-weight: bold;
 }
 .logo {
   margin-top: 107px;
@@ -22,57 +23,39 @@
   text-align: center;
   text-transform: uppercase;
 }
-.logo h1 {
+.logo__heading {
   font-size: 32px;
-  font-weight: bold;
-  line-height: 1;
+  line-height: 0.8;
   letter-spacing: 7px;
   color: #000;
   font-family: "Noto Sans";
+  font-weight: bold;
 }
-.logo p {
+.logo__text {
   margin: 0px;
   font-size: 14px;
-  font-weight: bold;
-  line-height: 1.5;
+  line-height: 1;
   letter-spacing: 8px;
   color: #a1bbd9;
   font-family: "Noto Sans";
-}
-.nav {
-  background: #2196F3;
-  position: absolute;
-  width: 100%;
-  top: 0px;
-  color: #fff;
-  padding: 20px;
-  text-align: center;
-  font-size: 20px;
-  text-transform: uppercase;
-  text-wrap: bold;
-  margin-bottom: 10px;
-}
-.slider {
-  background: #9E9E9E;
-  padding: 20px 0px 10px;
-  margin-bottom: 10px;
+  font-weight: bold;
 }
 @media (min-width: 350px) {
-  .logo h1 {
+  .logo__heading {
     font-size: 33px;
     letter-spacing: 10px;
   }
-  .logo p {
+  .logo__text {
     font-size: 14px;
     letter-spacing: 10px;
   }
 }
 @media (min-width: 768px) {
-  .logo h1 {
+  .logo__heading {
     font-size: 33px;
     letter-spacing: 11px;
   }
-  .logo p {
+  .logo__text {
     font-size: 14px;
     letter-spacing: 11px;
   }
@@ -82,17 +65,99 @@
     margin-top: 60px;
     margin-bottom: 50px;
   }
-  .nav {
-    position: relative;
-  }
-  .logo h1 {
+  .logo__heading {
     font-size: 38px;
     letter-spacing: 11px;
   }
-  .logo p {
+  .logo__text {
     font-size: 16px;
     letter-spacing: 11px;
   }
+}
+.nav {
+  box-shadow: 0px 5px 10px #2a496d;
+  background: #38383a;
+  position: absolute;
+  top: 0px;
+  width: 100%;
+  z-index: 1;
+}
+@media (min-width: 992px) {
+  .nav {
+    position: relative;
+  }
+}
+.nav__toggle {
+  display: block;
+  color: #fff;
+  padding: 28px 0px;
+  background: #16385f;
+  font-size: 14px;
+  line-height: 0.8;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  background-image: url("../icon/navigation-icon.png");
+  background-repeat: no-repeat;
+  background-position: right;
+  font-family: "Noto Sans";
+  font-weight: bold;
+}
+@media (min-width: 992px) {
+  .nav__toggle {
+    display: none;
+  }
+}
+.nav__menu {
+  margin: 0px;
+  padding: 0px;
+  display: none;
+}
+@media (min-width: 992px) {
+  .nav__menu {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+.nav__menu-list {
+  display: block;
+  list-style-type: none;
+}
+@media (min-width: 992px) {
+  .nav__menu-list {
+    display: inline-block;
+  }
+}
+.nav__menu-link {
+  display: inline-block;
+  background: #35577d;
+  width: 100%;
+  padding: 28px 0px;
+  font-size: 14px;
+  line-height: 0.8;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: #fff;
+  font-family: "Noto Sans";
+  font-weight: bold;
+}
+.nav__menu-link:hover,
+.nav__menu-link:focus,
+.nav__menu-link:active {
+  color: #ffcc00;
+  text-decoration: none;
+}
+@media (min-width: 992px) {
+  .nav__menu-link {
+    background: #38383a;
+    line-height: 0.8;
+    font-family: "Noto Sans";
+    font-weight: bold;
+  }
+}
+.slider {
+  background: #9E9E9E;
+  padding: 20px 0px 10px;
+  margin-bottom: 10px;
 }
 .block {
   background: #66BB6A;
