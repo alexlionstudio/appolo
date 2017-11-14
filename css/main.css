@@ -133,8 +133,7 @@
   background-position: 0 0;
 }
 .nav__toggle:active,
-.nav__toggle:focus,
-.nav__toggle:hover {
+.nav__toggle:focus {
   background: #16385f;
 }
 @media (min-width: 992px) {
