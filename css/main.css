@@ -17,6 +17,26 @@
   font-family: "Noto Sans";
   font-weight: bold;
 }
+/* --------------------------
+    Изменения в bootstrap
+----------------------------- */
+.container--no-padding {
+  padding-left: 0px;
+  padding-right: 0px;
+  width: 100%;
+}
+@media (min-width: 992px) {
+  .container--no-padding {
+    padding-left: 15px;
+    padding-right: 15px;
+    width: 970px;
+  }
+}
+@media (min-width: 1200px) {
+  .container--no-padding {
+    width: 1170px;
+  }
+}
 .logo {
   margin-top: 107px;
   margin-bottom: 40px;
@@ -88,24 +108,42 @@
   }
 }
 .nav__toggle {
+  position: relative;
   display: block;
   color: #fff;
-  padding: 28px 0px;
-  background: #16385f;
+  padding: 28px 15px;
+  background: #38383a;
   font-size: 14px;
   line-height: 0.8;
   letter-spacing: 3px;
   text-transform: uppercase;
-  background-image: url("../icon/navigation-icon.png");
-  background-repeat: no-repeat;
-  background-position: right;
+  cursor: pointer;
   font-family: "Noto Sans";
   font-weight: bold;
+}
+.nav__toggle:after {
+  content: "";
+  position: absolute;
+  top: 23px;
+  right: 15px;
+  width: 25px;
+  height: 20px;
+  background-image: url("../icon/navigation-icon.png");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+.nav__toggle:active,
+.nav__toggle:focus,
+.nav__toggle:hover {
+  background: #16385f;
 }
 @media (min-width: 992px) {
   .nav__toggle {
     display: none;
   }
+}
+.nav__toggle---active {
+  background: #16385f;
 }
 .nav__menu {
   margin: 0px;
@@ -121,17 +159,22 @@
 .nav__menu-list {
   display: block;
   list-style-type: none;
+  border-bottom: 1px solid #466a92;
+}
+.nav__menu-list:last-child {
+  border-bottom: none;
 }
 @media (min-width: 992px) {
   .nav__menu-list {
     display: inline-block;
+    border-bottom: none;
   }
 }
 .nav__menu-link {
   display: inline-block;
   background: #35577d;
   width: 100%;
-  padding: 28px 0px;
+  padding: 28px 15px;
   font-size: 14px;
   line-height: 0.8;
   letter-spacing: 3px;

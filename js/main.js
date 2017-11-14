@@ -15,10 +15,8 @@ $(document).ready(function() {
 	    menu.slideToggle();
 
 	    // Добавляем модификатор --active
-	    $(this).toggleClass('navigation__toggle-button--active');
-	    
+	    $(this).toggleClass('nav__toggle---active');
 	});
-
 	// При изменении размера окна, в большую сторону, если меню было с крыто, показываем его.
 	$(window).resize(function(){
 	    var w = $(window).width();
