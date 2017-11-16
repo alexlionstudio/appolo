@@ -28,9 +28,11 @@ $(document).ready(function() {
 	// owlcorusel
 	$('#slider-container').owlCarousel({
 		items: 1,
-		autoplay: true ,
+		autoplay: 4000,
 		nav: true,
 		navText: ["",""],
+		rewind: true,
+
 	});
 
 });
