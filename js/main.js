@@ -28,7 +28,9 @@ $(document).ready(function() {
 	// owlcorusel
 	$('#slider-container').owlCarousel({
 		items: 1,
-		autoplay: true,
+		autoplay: true ,
+		nav: true,
+		navText: ["",""],
 	});
 
 });
