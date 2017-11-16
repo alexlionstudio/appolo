@@ -338,7 +338,7 @@
   width: 100%;
   bottom: -60px;
 }
-@media (min-width: 992px) {
+@media (min-width: 1200px) {
   .owl-dots {
     display: none;
   }
