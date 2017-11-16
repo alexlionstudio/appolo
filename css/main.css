@@ -1,4 +1,5 @@
 @import url("../fonts/noto/noto.css");
+@import url("../fonts/notoserif/notoserif.css");
 .helper-structure {
   color: #fff;
   padding: 20px;
@@ -9,13 +10,15 @@
   margin-bottom: 10px;
 }
 .full-width {
-  background: #9E9E9E;
   padding: 20px 0px 10px;
   margin-bottom: 10px;
 }
 .noto-sans {
   font-family: "Noto Sans";
   font-weight: bold;
+}
+.Noto-serif {
+  font-family: "Noto Serif";
 }
 /* --------------------------
     Изменения в bootstrap
@@ -197,9 +200,66 @@
   }
 }
 .slider {
-  background: #9E9E9E;
-  padding: 20px 0px 10px;
-  margin-bottom: 10px;
+  padding-top: 70px;
+  padding-bottom: 80px;
+  background: #446a99;
+  background-image: url("../img/slider-bg.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+@media (min-width: 768px) {
+  .slider {
+    padding-top: 70px;
+    padding-bottom: 90px;
+  }
+}
+@media (min-width: 992px) {
+  .slider {
+    padding-top: 100px;
+    padding-bottom: 117px;
+  }
+}
+.slider__content-block {
+  padding: 10px 20px;
+  text-align: center;
+}
+@media (min-width: 992px) {
+  .slider__content-block {
+    padding: 10px 0px;
+  }
+}
+.Slider__title {
+  margin: 0px 0px 15px;
+  padding: 0px;
+  font-size: 28px;
+  line-height: 38px;
+  letter-spacing: 1px;
+  color: #fff;
+  font-family: "Noto Sans";
+  font-weight: bold;
+}
+@media (min-width: 992px) {
+  .Slider__title {
+    margin: 0px 0px 15px;
+    font-size: 32px;
+    line-height: 42px;
+  }
+}
+.Slider__slogan {
+  margin: 0px;
+  padding: 0px;
+  font-size: 18px;
+  line-height: 28px;
+  letter-spacing: 0.5px;
+  color: #fff;
+  font-family: "Noto Serif";
+}
+@media (min-width: 992px) {
+  .Slider__slogan {
+    font-size: 22px;
+    line-height: 32px;
+  }
 }
 .block {
   background: #66BB6A;
@@ -232,7 +292,7 @@
   margin-bottom: 10px;
 }
 .footer {
-  background: #9E9E9E;
+  background: #446a99;
   padding: 20px 0px 10px;
   margin-bottom: 10px;
 }

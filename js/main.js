@@ -23,5 +23,12 @@ $(document).ready(function() {
 	    if(w > 992) {
 	        menu.removeAttr('style');
 	    }
-	});	
+	});
+
+	// owlcorusel
+	$('#slider-container').owlCarousel({
+		items: 1,
+		autoplay: true,
+	});
+
 });

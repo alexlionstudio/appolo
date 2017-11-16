@@ -10,6 +10,10 @@
     <!-- Bootstrap -->
     <link href="bower/bootstrap/dist/css/bootstrap.css" rel="stylesheet">
 
+    <!-- Owlcarousel -->
+    <link rel="stylesheet" href="libs/owlcarousel/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="libs/owlcarousel/assets/owl.theme.default.min.css">
+
     <!-- Main style -->
     <link rel="stylesheet" href="css/main.css">
 
@@ -43,18 +47,89 @@
     <!-- Slider start  -->
     <div class="slider">
     	<div class="container">
-    		<div class="row">
-    			<div class="col-sm-2 col-lg-3 hidden-xs">
-                    <div class="block-hidden">Left</div>
+            <!-- corusel start -->
+           <div id="slider-container" class="owl-carousel owl-theme owl-loaded">
+                <!-- 1 content start -->
+                <div class="row">
+                    <div class=" col-sm-offset-2 col-sm-8 col-md-6 col-md-offset-3">
+                        <div class="hidden-xs">
+                            <div class="slider__content-block">
+                                <div class="Slider__title">
+                                     Надежная площадка для высоконагруженных проектов
+                                </div>
+                                <div class="Slider__slogan">
+                                    Супер мощные сервера, мгновенная масштабируемость, гибкая конфигурация.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="visible-xs">
+                            <div class="slider__content-block">
+                                <div class="Slider__title">
+                                     Highload площадка
+                                </div>
+                                <div class="Slider__slogan">
+                                     Супер мощные сервера, мгновенная масштабируемость.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-    			<div class="col-sm-8 col-lg-6">
-                    <div class="block">Slider</div>
+                <!-- 1 content end -->
+                <!-- 2 content start-->
+                <div class="row">
+                    <div class=" col-sm-offset-2 col-sm-8 col-md-6 col-md-offset-3">
+                        <div class="hidden-xs">
+                            <div class="slider__content-block">
+                                <div class="Slider__title">
+                                     Нужен хостинг для стартапа? Вы в правильном месте!
+                                </div>
+                                <div class="Slider__slogan">
+                                    Начните со специального стартап тарифа. Увеличивайте мощности при необходимости.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="visible-xs">
+                            <div class="slider__content-block">
+                                <div class="Slider__title">
+                                     Хостинг для стартапа
+                                </div>
+                                <div class="Slider__slogan">
+                                     Увеличивайте мощноности при необходимости.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-    			<div class="col-sm-2 col-lg-3 hidden-xs">
-                    <div class="block-hidden">Right</div>
-             </div>
-    		</div>
-    	</div>
+                <!-- 2 content end-->
+                <!-- 3 content start -->
+                <div class="row">
+                    <div class=" col-sm-offset-2 col-sm-8 col-md-6 col-md-offset-3">
+                        <div class="hidden-xs">
+                            <div class="slider__content-block">
+                                <div class="Slider__title">
+                                     Тариф для фрилансеров и небольших сайтов
+                                </div>
+                                <div class="Slider__slogan">
+                                    Разместите свое портфолио и сайты клиентов. Надежные сервера, отзывчивая техподдержка.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="visible-xs">
+                            <div class="slider__content-block">
+                                <div class="Slider__title">
+                                     Тариф для фрилансеров
+                                </div>
+                                <div class="Slider__slogan">
+                                     Надежные сервера, отзывчивая техподдержка.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- 3 content end -->
+           </div>
+           <!-- corusel end -->
+        </div>
     </div>
     <!-- Slider end  -->
     <!-- Content start -->
@@ -144,7 +219,9 @@
     <script src="bower/jquery/dist/jquery.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="bower/bootstrap/dist/js/bootstrap.js"></script>
-    <!-- js -->
+    <!-- Owlcarousel -->
+    <script src="libs/owlcarousel/owl.carousel.min.js"></script>
+    <!-- User JS -->
     <script src="js/main.js"></script>
   </body>
 </html> 
