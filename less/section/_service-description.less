@@ -1,0 +1,104 @@
+.service-description{
+	margin-top: 25px;
+}
+.service-description__block{
+	padding-top:  50px;
+	padding-bottom: 50px;
+	border-top: solid 1px #DCDCDC;
+	border-bottom: solid 1px #DCDCDC;
+	@media (min-width: 1200px){
+			padding-top:  70px;
+		}
+}
+.service-description__block--rocket{
+	border-top: none;
+}
+.service-description__block-text{
+	display: block;
+	margin-top: 10px;
+	position: relative;
+	@media (min-width: 768px){
+		margin-top: 40px;
+	}
+	@media (min-width: 1200px){
+		margin-top: 40px;
+	}
+	&:before{
+		content: "1";
+		position: absolute;
+		top:-33px;
+		left:-10px;
+		text-align: center;
+		font-size: 16px;
+		line-height: 1.6;
+		height: 26px;
+		width: 26px;
+		color: #fff;
+		border-radius: 13px;
+		background: #FFC709;
+		@media (min-width: 1200px){
+			left:-33px;
+			top:-23px;
+		}
+	}
+}
+.service-description__block-text--special{
+	&:before{
+		content: "2";
+	}
+}
+.service-description__block-img{
+	text-align: center;
+	@media (min-width: 768px){
+		text-align: left;
+		margin-top: 40px;
+
+	}
+	@media (min-width: 1200px){
+		margin-top: 0px;
+	}
+	& img{
+		display: inline-block;
+		width: 100%;
+		max-width: 475px;
+		@media (min-width: 768px){
+			padding-top: 7px;
+		}
+		@media (min-width: 1200px){
+			padding-top: 17px;
+		}
+	}
+}
+.service-description__block-img--special{
+	@media (min-width: 768px){
+		margin-top: 0px;
+
+	}
+	& img{
+		max-width: 346px;
+	}
+}
+.service-description__block-text h3{
+	margin: 0;
+	font-size: 28px;
+	line-height: 38px;
+	letter-spacing: 1px;
+	.noto-sans
+}
+.service-description__block-text p{
+	margin-top: 22px;
+	margin-bottom: 0;
+	.noto-sans-regular
+}
+.service-description__block-link{
+	margin-top: 20px;
+	display: block;
+	background-image: url("../icon/arrow-orange.png");
+	background-position: center;
+	background-size: cover;
+	width: 34px;
+	height: 34px;
+	@media (min-width: 768px){
+		margin-top: 30px;
+	}
+}
