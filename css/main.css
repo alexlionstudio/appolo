@@ -426,7 +426,6 @@
 }
 .service-description__block {
   padding-top: 50px;
-  padding-bottom: 50px;
   border-top: solid 1px #DCDCDC;
   border-bottom: solid 1px #DCDCDC;
 }
@@ -441,6 +440,7 @@
 .service-description__block-text {
   display: block;
   margin-top: 10px;
+  padding-bottom: 50px;
   position: relative;
 }
 @media (min-width: 768px) {
@@ -478,6 +478,7 @@
 }
 .service-description__block-img {
   text-align: center;
+  position: relative;
 }
 @media (min-width: 768px) {
   .service-description__block-img {
@@ -493,7 +494,7 @@
 .service-description__block-img img {
   display: inline-block;
   width: 100%;
-  max-width: 475px;
+  max-width: 525px;
 }
 @media (min-width: 768px) {
   .service-description__block-img img {
@@ -502,7 +503,9 @@
 }
 @media (min-width: 1200px) {
   .service-description__block-img img {
+    position: absolute;
     padding-top: 17px;
+    left: -50px;
   }
 }
 @media (min-width: 768px) {

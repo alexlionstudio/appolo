@@ -3,7 +3,6 @@
 }
 .service-description__block{
 	padding-top:  50px;
-	padding-bottom: 50px;
 	border-top: solid 1px #DCDCDC;
 	border-bottom: solid 1px #DCDCDC;
 	@media (min-width: 1200px){
@@ -16,6 +15,7 @@
 .service-description__block-text{
 	display: block;
 	margin-top: 10px;
+	padding-bottom: 50px;
 	position: relative;
 	@media (min-width: 768px){
 		margin-top: 40px;
@@ -49,6 +49,7 @@
 }
 .service-description__block-img{
 	text-align: center;
+	position: relative;
 	@media (min-width: 768px){
 		text-align: left;
 		margin-top: 40px;
@@ -60,15 +61,22 @@
 	& img{
 		display: inline-block;
 		width: 100%;
-		max-width: 475px;
+		max-width: 525px;
 		@media (min-width: 768px){
 			padding-top: 7px;
 		}
 		@media (min-width: 1200px){
+			position: absolute;
 			padding-top: 17px;
+			left:-50px;
 		}
 	}
 }
+// .service-description__block-img--push{
+// 	@media (min-width: 1200px){
+// 		position: relative;
+// 	}
+// }
 .service-description__block-img--special{
 	@media (min-width: 768px){
 		margin-top: 0px;
