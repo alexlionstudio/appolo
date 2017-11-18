@@ -1,5 +1,6 @@
 @import url("../fonts/noto/noto.css");
 @import url("../fonts/notoserif/notoserif.css");
+@import url("../fonts/als-rubl/als-rubl.css");
 .helper-structure {
   color: #fff;
   padding: 20px;
@@ -18,6 +19,11 @@
   font-family: "Noto Sans";
   font-weight: bold;
 }
+.noto-sans-12 {
+  font-family: "Noto Sans";
+  font-size: 12px;
+  line-height: 14px;
+}
 .noto-sans-regular {
   font-size: 14px;
   line-height: 24px;
@@ -26,6 +32,10 @@
 }
 .Noto-serif {
   font-family: "Noto Serif";
+}
+.als-rubl {
+  font-weight: normal;
+  font-family: 'als_rublregular';
 }
 /* --------------------------
     Изменения в bootstrap
@@ -46,6 +56,10 @@
   .container--no-padding {
     width: 1170px;
   }
+}
+.row--no-padding {
+  padding-top: 0px;
+  padding-bottom: 0px;
 }
 .logo {
   margin-top: 107px;
@@ -546,6 +560,167 @@
     margin-top: 30px;
   }
 }
+.package {
+  margin-top: 38px;
+  margin-bottom: 50px;
+}
+@media (min-width: 768px) {
+  .package {
+    margin-top: 42px;
+    margin-bottom: 102px;
+  }
+}
+@media (min-width: 1200px) {
+  .package {
+    margin-top: 70px;
+    margin-bottom: 90px;
+  }
+}
+.package__heading {
+  text-align: center;
+}
+.package__heading-title {
+  margin: 0px;
+  font-size: 28px;
+  line-height: 28px;
+  letter-spacing: -1px;
+  font-family: "Noto Sans";
+  font-weight: bold;
+}
+@media (min-width: 1200px) {
+  .package__heading-title {
+    font-size: 38px;
+    line-height: 38px;
+  }
+}
+.package__heading-text {
+  display: inline-block;
+  margin-top: 16px;
+  margin-bottom: 30px;
+  width: 289px;
+  font-size: 14px;
+  line-height: 24px;
+  color: #777777;
+  font-family: "Noto Sans";
+}
+@media (min-width: 1200px) {
+  .package__heading-text {
+    margin-top: 24px;
+    margin-bottom: 49px;
+    width: 459px;
+  }
+}
+.package__block {
+  padding-top: 36px;
+  padding-bottom: 47px;
+  box-shadow: 0px 10px 40px rgba(63, 75, 89, 0.3);
+  text-align: center;
+  margin-bottom: 40px;
+  color: #242526;
+}
+@media (min-width: 768px) {
+  .package__block {
+    margin-bottom: 0px;
+  }
+}
+.package__block--no-bottom-pading {
+  margin-bottom: 0px;
+}
+.package__block-type {
+  margin-top: 0px;
+  margin-bottom: 36px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-family: "Noto Sans";
+  font-size: 12px;
+  line-height: 14px;
+}
+.package__block-price {
+  font-size: 48px;
+  line-height: 35px;
+  margin-bottom: 26px;
+  font-family: "Noto Sans";
+  font-weight: bold;
+}
+.package__block-price:after {
+  content: "c";
+  font-weight: normal;
+  font-family: 'als_rublregular';
+}
+.package__block-period {
+  line-height: 8px;
+  letter-spacing: 0.5px;
+  margin-bottom: 50px;
+  font-family: "Noto Sans";
+  font-size: 12px;
+  line-height: 14px;
+}
+.package__block-benefits {
+  margin-bottom: 49px;
+  font-size: 14px;
+  line-height: 24px;
+  color: #777777;
+  font-family: "Noto Sans";
+  color: #242526;
+  line-height: 15px;
+}
+.package__block-benefits ul {
+  margin: 0px;
+  padding: 0px;
+  list-style-type: none;
+}
+.package__block-benefits li {
+  margin: 0px;
+  padding: 7px 0 7px;
+}
+.package__block-benefits li:before {
+  content: "";
+  width: 12px;
+  height: 8px;
+  background-image: url("../icon/ok-icon.png");
+  background-repeat: no-repeat;
+  background-position: left bottom;
+  display: inline-block;
+  margin-right: 10px;
+}
+.package__block-benefits li:first-child {
+  padding-top: 0px;
+}
+.package__block-benefits li:last-child {
+  padding-bottom: 0px;
+}
+a.button {
+  display: inline-block;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  padding-right: 30px;
+  padding-left: 30px;
+  height: 42px;
+  background: #252525;
+  color: #fff;
+  font-size: 14px;
+  text-transform: uppercase;
+  line-height: 10px;
+  letter-spacing: 2px;
+  border-radius: 21px;
+  text-decoration: none;
+  box-shadow: 0 8px 16px #ABABAB;
+  font-family: "Noto Sans";
+  font-weight: bold;
+}
+a.button:hover,
+a.button:active {
+  background: #FFC709;
+  color: #fff;
+  text-decoration: none;
+}
+a.button--special {
+  background: #FFC709;
+}
+a.button--special:hover,
+a.button--special:active {
+  color: #000;
+}
 .block {
   background: #66BB6A;
   color: #fff;
@@ -584,3 +759,4 @@
   padding: 20px 0px 10px;
   margin-bottom: 10px;
 }
+/*# sourceMappingURL=main.css.map */
