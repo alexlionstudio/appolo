@@ -11,10 +11,6 @@
   margin-top: 10px;
   margin-bottom: 10px;
 }
-.full-width {
-  padding: 20px 0px 10px;
-  margin-bottom: 10px;
-}
 .noto-sans {
   font-family: "Noto Sans";
   font-weight: bold;
@@ -721,42 +717,84 @@ a.button--special:hover,
 a.button--special:active {
   color: #000;
 }
-.block {
-  background: #66BB6A;
-  color: #fff;
-  padding: 20px;
-  text-align: center;
-  font-size: 20px;
-  text-transform: uppercase;
-  text-wrap: bold;
-  margin-top: 10px;
-  margin-bottom: 10px;
-}
-.block--special {
-  background: #009688;
-  color: #fff;
-  padding: 20px;
-  text-align: center;
-  font-size: 20px;
-  text-transform: uppercase;
-  text-wrap: bold;
-  margin-top: 10px;
-  margin-bottom: 10px;
-}
-.block-hidden {
-  background: #FFCC80;
-  color: #fff;
-  padding: 20px;
-  text-align: center;
-  font-size: 20px;
-  text-transform: uppercase;
-  text-wrap: bold;
-  margin-top: 10px;
-  margin-bottom: 10px;
-}
 .footer {
-  background: #446a99;
-  padding: 20px 0px 10px;
-  margin-bottom: 10px;
+  background: #252525;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+@media (min-width: 1200px) {
+  .footer {
+    padding-top: 80px;
+    padding-bottom: 76px;
+  }
+}
+.footer__block {
+  padding-bottom: 20px;
+  margin-bottom: 40px;
+}
+@media (min-width: 768px) {
+  .footer__block {
+    margin-bottom: 0px;
+  }
+}
+.footer__block--no-margin {
+  margin-bottom: 0px;
+}
+.footer__block-title {
+  color: #fff;
+  font-family: "Noto Sans";
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 3px;
+  line-height: 11px;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+  font-weight: bold;
+}
+.footer__block-menu {
+  padding: 0px;
+}
+.footer__block-list {
+  list-style-type: none;
+  padding-top: 7px;
+  padding-bottom: 7px;
+}
+.footer__block-list:first-child {
+  padding-top: 0px;
+}
+.footer__block-list:last-child {
+  padding-bottom: 0px;
+}
+a.footer__block-link {
+  font-size: 14px;
+  line-height: 24px;
+  color: #777777;
+  font-family: "Noto Sans";
+  line-height: 16px;
+}
+a.footer__block-link:hover,
+a.footer__block-link:active {
+  color: #FFC709;
+  text-decoration: none;
+}
+.footer__copyrate {
+  width: 160px;
+  font-size: 14px;
+  line-height: 24px;
+  color: #777777;
+  font-family: "Noto Sans";
+  line-height: 21px;
+  padding-top: 17px;
+}
+@media (min-width: 768px) {
+  .footer__copyrate {
+    width: 445px;
+    padding-top: 30px;
+  }
+}
+@media (min-width: 1200px) {
+  .footer__copyrate {
+    padding-top: 43px;
+  }
 }
 /*# sourceMappingURL=main.css.map */
