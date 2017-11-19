@@ -24,6 +24,13 @@ $(document).ready(function() {
 	        menu.removeAttr('style');
 	    }
 	});
+	// При нажатие на ссылку в меню. меню сворачивается обратно
+	var w = $(window).width();
+	if (w < 992 ) {
+		$('nav.nav a').on("click",function(){
+			menu.slideToggle();
+		});
+	};
 
 	// owlcorusel
 	$('#slider-container').owlCarousel({
@@ -32,7 +39,10 @@ $(document).ready(function() {
 		nav: true,
 		navText: ["",""],
 		rewind: true,
-
 	});
 
+	//PageScroll2id
+	$("nav a,a[href='#top'],a[rel='m_PageScroll2id'],a.PageScroll2id").mPageScroll2id({
+		highlighSelector:"nav a"
+	});
 });

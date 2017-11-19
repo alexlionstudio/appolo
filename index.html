@@ -35,17 +35,17 @@
         <div id="nav__toggle" class="nav__toggle">Навигация</div>
         <div class="container container--no-padding">
             <ul class="nav__menu">
-                <li class="nav__menu-list"><a class="nav__menu-link" href="#">главная</a></li>
-                <li class="nav__menu-list"><a class="nav__menu-link" href="#">как-мы-работаем</a></li>
-                <li class="nav__menu-list"><a class="nav__menu-link" href="#">фрилансеры</a></li>
-                <li class="nav__menu-list"><a class="nav__menu-link" href="#">стартапам</a></li>
-                <li class="nav__menu-list"><a class="nav__menu-link" href="#">тарифы</a></li>
-                <li class="nav__menu-list"><a class="nav__menu-link" href="#">контакты</a></li>
+                <li class="nav__menu-list"><a class="nav__menu-link" href="#main">главная</a></li>
+                <li class="nav__menu-list"><a class="nav__menu-link" href="#benefits">как-мы-работаем</a></li>
+                <li class="nav__menu-list"><a class="nav__menu-link" href="#frilanser">фрилансеры</a></li>
+                <li class="nav__menu-list"><a class="nav__menu-link" href="#staartap">стартапам</a></li>
+                <li class="nav__menu-list"><a class="nav__menu-link" href="#price">тарифы</a></li>
+                <li class="nav__menu-list"><a class="nav__menu-link" href="#contacts">контакты</a></li>
             </ul>
         </div><!-- container -->
     </nav>
     <!-- Slider start  -->
-    <div class="slider">
+    <div id="main" class="slider">
     	<div class="container">
             <!-- corusel start -->
            <div id="slider-container" class="owl-carousel owl-theme owl-loaded">
@@ -133,7 +133,7 @@
     </div>
     <!-- Slider end  -->
     <!-- benefits start -->
-    <div class="benefits container">
+    <div id="benefits" class="benefits container">
         <div class="row">
                     <div class="col-xs-12">
                         <div class="benefits__heading">Как мы работаем</div>
@@ -174,7 +174,7 @@
     <!-- service-description start -->
     <div class="service-description">
             <!-- service-description 1 block start -->
-            <div class="service-description__block">
+            <div id="frilanser" class="service-description__block">
                 <div class="container">
                     <div class="row">
                         <!-- service-description content start -->
@@ -196,7 +196,7 @@
             </div>
             <!-- service-description 1 block end -->
             <!-- service-description 2 block start -->
-            <div class="service-description__block service-description__block--rocket">
+            <div id="staartap" class="service-description__block service-description__block--rocket">
                 <div class="container">
                     <div class="row">
                         <!-- service-description content start -->
@@ -220,7 +220,7 @@
     </div>
      <!-- service-description end -->
     <!-- Content start -->
-    <div class="package">
+    <div id="price" class="package">
         <div class="container">
              <!-- Cards start -->
             <div class="row row--no-padding">
@@ -290,7 +290,7 @@
     </div>
     <!-- Content ends -->
     <!-- Footer start -->
-    <div class="footer">
+    <div id="contacts" class="footer">
     	<div class="container">
     		<nav class="row">
                 <!-- #1 Footer Block продукты start -->
@@ -298,9 +298,9 @@
     				<div class="footer__block">
                         <div class="footer__block-title" >продукт</div>
                         <ul class="footer__block-menu">
-                            <li class="footer__block-list"><a href="#" class="footer__block-link">Busines</a>s</li>
+                            <li class="footer__block-list"><a href="#" class="footer__block-link">Business</a></li>
                             <li class="footer__block-list"><a href="#" class="footer__block-link">Compare</a></li>
-                            <li class="footer__block-list"><a href="#" class="footer__block-link">Feature</a>s</li>
+                            <li class="footer__block-list"><a href="#" class="footer__block-link">Features</a></li>
                             <li class="footer__block-list"><a href="#" class="footer__block-link">Pricing</a></li>
                         </ul>
                     </div>
@@ -311,9 +311,9 @@
                     <div class="footer__block">
                         <div class="footer__block-title" >о компании</div>
                         <ul class="footer__block-menu">
-                            <li class="footer__block-list"><a href="#" class="footer__block-link">Blog</a>s</li>
+                            <li class="footer__block-list"><a href="#" class="footer__block-link">Blog</a></li>
                             <li class="footer__block-list"><a href="#" class="footer__block-link">News</a></li>
-                            <li class="footer__block-list"><a href="#" class="footer__block-link">Press Releases</a>s</li>
+                            <li class="footer__block-list"><a href="#" class="footer__block-link">Press Releases</a></li>
                             <li class="footer__block-list"><a href="#" class="footer__block-link">Jobs</a></li>
                         </ul>
                     </div>
@@ -324,9 +324,9 @@
                     <div class="footer__block footer__block--no-margin">
                         <div class="footer__block-title" >поддержка</div>
                         <ul class="footer__block-menu">
-                            <li class="footer__block-list"><a href="#" class="footer__block-link">Support</a>s</li>
+                            <li class="footer__block-list"><a href="#" class="footer__block-link">Support</a></li>
                             <li class="footer__block-list"><a href="#" class="footer__block-link">Developers</a></li>
-                            <li class="footer__block-list"><a href="#" class="footer__block-link">Customer Service</a>s</li>
+                            <li class="footer__block-list"><a href="#" class="footer__block-link">Customer Service</a></li>
                             <li class="footer__block-list"><a href="#" class="footer__block-link">Ger Started Guide</a></li>
                         </ul>
                     </div>
@@ -349,6 +349,8 @@
     <script src="bower/bootstrap/dist/js/bootstrap.js"></script>
     <!-- Owlcarousel -->
     <script src="libs/owlcarousel/owl.carousel.min.js"></script>
+    <!-- Page Scroll -->
+    <script src="libs/pagescroll2id/jquery.malihu.PageScroll2id.js"></script>
     <!-- User JS -->
     <script src="js/main.js"></script>
   </body>
