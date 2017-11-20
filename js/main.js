@@ -1,4 +1,5 @@
-$(document).ready(function(){
+
+$(document).ready(function() {
 
 	// Скрипт для показа и скрытия выпадающего меню на смартфонах
 	// Создаем переменые для кнопки и для меню
@@ -17,20 +18,35 @@ $(document).ready(function(){
 	    // Добавляем модификатор --active
 	    $(this).toggleClass('nav__toggle---active');
 	});
-	// При изменении размера окна, в большую сторону, если меню было с крыто, показываем его.
+
+	// В ф-ии fnstart(); проверяем - если меню открыто (проверяем по наличию класса --active у кнопки pull)
+	// тогда убираем класс модификатор --active у кнопки pull
+	// и сворачиваем/скрываем меню 
+	function fnstart(){	
+		if ( $("#nav__toggle").hasClass("nav__toggle---active")  ) {
+   			pull.toggleClass('nav__toggle---active');
+			menu.slideToggle();
+	    }
+	};
+
+
+	// При изменении размера окна, в большую сторону, если меню было скрыто, показываем его
+	// И у кнопки убираем модификатор --active
 	$(window).resize(function(){
 	    var w = $(window).width();
 	    if(w > 992) {
 	        menu.removeAttr('style');
+	        pull.removeClass('nav__toggle---active');
+	    } else {
+
 	    }
 	});
-	// При нажатие на ссылку в меню. меню сворачивается обратно
-	var w = $(window).width();
-	if (w < 992 ) {
-		$('nav.nav a').on("click",function(){
-			menu.slideToggle();
-		});
-	};
+
+	// Скрываем меню при клике на него на смартфоне и планцете
+	// По клику на ссылку в меню запускаем ф-ю fnstart();
+	$('nav.nav a').on("click", function(){
+		fnstart();
+	});
 
 	// owlcorusel
 	$('#slider-container').owlCarousel({

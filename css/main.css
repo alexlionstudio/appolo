@@ -439,8 +439,8 @@ a.nav__menu-link:active {
 }
 .service-description__block {
   padding-top: 50px;
-  border-top: solid 1px #DCDCDC;
-  border-bottom: solid 1px #DCDCDC;
+  border-top: solid 1px #EBEBEB;
+  border-bottom: solid 1px #EBEBEB;
 }
 @media (min-width: 1200px) {
   .service-description__block {
