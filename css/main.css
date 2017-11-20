@@ -192,7 +192,7 @@
     border-bottom: none;
   }
 }
-.nav__menu-link {
+a.nav__menu-link {
   display: inline-block;
   background: #35577d;
   width: 100%;
@@ -200,19 +200,20 @@
   font-size: 14px;
   line-height: 0.8;
   letter-spacing: 3px;
+  text-decoration: none;
   text-transform: uppercase;
   color: #fff;
   font-family: "Noto Sans";
   font-weight: bold;
 }
-.nav__menu-link:hover,
-.nav__menu-link:focus,
-.nav__menu-link:active {
+a.nav__menu-link:hover,
+a.nav__menu-link:focus,
+a.nav__menu-link:active {
   color: #ffcc00;
   text-decoration: none;
 }
 @media (min-width: 992px) {
-  .nav__menu-link {
+  a.nav__menu-link {
     background: #38383a;
     line-height: 0.8;
     font-family: "Noto Sans";
@@ -769,6 +770,7 @@ a.button--special:active {
   padding-bottom: 0px;
 }
 a.footer__block-link {
+  text-decoration: none;
   font-size: 14px;
   line-height: 24px;
   color: #777777;
